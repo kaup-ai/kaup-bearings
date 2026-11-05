@@ -14,6 +14,10 @@ const query = ref('')
 const bore = ref('')
 const outside = ref('')
 const activeHero = ref(0)
+const heroPausedByUser = ref(false)
+const heroPausedByInteraction = ref(false)
+const heroReducedMotion = ref(false)
+let heroTimer: ReturnType<typeof setInterval> | undefined
 
 const heroSlides = computed(() =>
   locale.value === 'zh'
@@ -62,6 +66,42 @@ const heroSlides = computed(() =>
 function moveHero(direction: -1 | 1) {
   activeHero.value = (activeHero.value + direction + heroSlides.value.length) % heroSlides.value.length
 }
+
+const heroAutoPlaying = computed(
+  () => !heroPausedByUser.value && !heroPausedByInteraction.value && !heroReducedMotion.value,
+)
+
+function syncHeroAutoplay() {
+  if (heroTimer) clearInterval(heroTimer)
+  heroTimer = undefined
+  if (!heroAutoPlaying.value) return
+  heroTimer = setInterval(() => moveHero(1), 5000)
+}
+
+function selectHero(index: number) {
+  activeHero.value = index
+  syncHeroAutoplay()
+}
+
+function releaseHeroFocus(event: FocusEvent) {
+  const region = event.currentTarget as HTMLElement | null
+  const next = event.relatedTarget as Node | null
+  if (!region?.contains(next)) heroPausedByInteraction.value = false
+}
+
+onMounted(() => {
+  const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+  heroReducedMotion.value = motionQuery.matches
+  motionQuery.addEventListener('change', (event) => {
+    heroReducedMotion.value = event.matches
+  })
+  syncHeroAutoplay()
+})
+
+watch([heroPausedByUser, heroPausedByInteraction, heroReducedMotion], syncHeroAutoplay)
+onBeforeUnmount(() => {
+  if (heroTimer) clearInterval(heroTimer)
+})
 
 const title = computed(() =>
   locale.value === 'zh'
@@ -150,7 +190,7 @@ const homeEvents = exhibitions.slice(0, 2)
             </label>
             <button class="kb-button hero-search-submit" type="submit">
               <UIcon name="i-lucide-search" aria-hidden="true" />
-              {{ locale === 'zh' ? '搜索目录' : 'Search catalogue' }}
+              {{ locale === 'zh' ? '搜索' : 'Search' }}
             </button>
           </form>
           <div class="hero-actions">
@@ -170,6 +210,10 @@ const homeEvents = exhibitions.slice(0, 2)
           tabindex="0"
           @keydown.left.prevent="moveHero(-1)"
           @keydown.right.prevent="moveHero(1)"
+          @mouseenter="heroPausedByInteraction = true"
+          @mouseleave="heroPausedByInteraction = false"
+          @focusin="heroPausedByInteraction = true"
+          @focusout="releaseHeroFocus"
         >
           <div class="hero-slides">
             <div
@@ -207,25 +251,19 @@ const homeEvents = exhibitions.slice(0, 2)
                   :aria-selected="index === activeHero"
                   :aria-label="slide.title"
                   :class="{ active: index === activeHero }"
-                  @click="activeHero = index"
+                  @click="selectHero(index)"
                 />
               </div>
-              <div class="hero-carousel-actions">
-                <button
-                  type="button"
-                  :aria-label="locale === 'zh' ? '上一张' : 'Previous slide'"
-                  @click="moveHero(-1)"
-                >
-                  <UIcon name="i-lucide-arrow-left" aria-hidden="true" />
-                </button>
-                <button
-                  type="button"
-                  :aria-label="locale === 'zh' ? '下一张' : 'Next slide'"
-                  @click="moveHero(1)"
-                >
-                  <UIcon name="i-lucide-arrow-right" aria-hidden="true" />
-                </button>
-              </div>
+              <button
+                type="button"
+                class="hero-autoplay"
+                :aria-label="heroPausedByUser
+                  ? (locale === 'zh' ? '继续自动轮播' : 'Resume automatic rotation')
+                  : (locale === 'zh' ? '暂停自动轮播' : 'Pause automatic rotation')"
+                @click="heroPausedByUser = !heroPausedByUser"
+              >
+                <UIcon :name="heroPausedByUser ? 'i-lucide-play' : 'i-lucide-pause'" aria-hidden="true" />
+              </button>
             </div>
           </div>
         </div>
@@ -429,10 +467,10 @@ h1 {
 }
 .hero-search {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(112px, auto);
-  gap: 4px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 6px;
   margin-top: 30px;
-  padding: 5px;
+  padding: 7px 9px;
   background: white;
   border: 1px solid var(--kb-line);
   border-radius: 7px;
@@ -450,23 +488,22 @@ h1 {
 .hero-search .hero-field {
   display: grid;
   gap: 2px;
-  padding: 7px 11px;
-  border-right: 1px solid var(--kb-line);
+  padding: 7px 10px;
+  background: #f8fbfc;
+  border: 1px solid var(--kb-line);
+  border-radius: 5px;
 }
 .hero-query {
-  grid-column: 1 / 3;
+  grid-column: 1 / 5;
+  grid-row: 1;
 }
 .hero-field:nth-of-type(2) {
-  grid-column: 1;
+  grid-column: 1 / 4;
   grid-row: 2;
 }
 .hero-field:nth-of-type(3) {
-  grid-column: 2;
+  grid-column: 4 / 7;
   grid-row: 2;
-}
-.hero-search .hero-field:nth-of-type(2),
-.hero-search .hero-field:nth-of-type(3) {
-  border-top: 1px solid var(--kb-line);
 }
 .hero-field span {
   color: var(--kb-muted);
@@ -487,11 +524,19 @@ h1 {
   border-radius: 4px;
 }
 .hero-search-submit {
-  grid-column: 3;
-  grid-row: 1 / 3;
-  justify-content: flex-start;
+  grid-column: 5 / 7;
+  grid-row: 1;
+  align-self: stretch;
+  justify-content: center;
   gap: 10px;
-  padding-inline: 32px;
+  padding-inline: 18px;
+  background: var(--kb-blue-deep);
+  border-color: var(--kb-blue-deep);
+  color: white;
+}
+.hero-search-submit:hover {
+  background: var(--kb-blue);
+  border-color: var(--kb-blue);
 }
 .hero-actions {
   display: flex;
@@ -565,37 +610,15 @@ h1 {
   line-height: 1.55;
   color: var(--kb-muted);
 }
-.hero-carousel-actions {
-  display: flex;
-  gap: 6px;
-}
-.hero-carousel-actions button {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  background: var(--kb-surface-soft);
-  border: 1px solid var(--kb-line);
-  border-radius: 4px;
-  color: var(--kb-blue-deep);
-}
-.hero-carousel-actions button:hover {
-  background: var(--kb-orange);
-  border-color: var(--kb-orange);
-}
-.hero-carousel-actions svg {
-  width: 17px;
-  height: 17px;
-}
 .hero-carousel-nav {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   align-items: flex-end;
 }
 .hero-slide-dots {
   display: flex;
   gap: 7px;
-  padding-bottom: 18px;
+  padding-bottom: 10px;
 }
 .hero-slide-dots button {
   width: 28px;
@@ -608,6 +631,30 @@ h1 {
 .hero-slide-dots button.active {
   width: 50px;
   background: var(--kb-blue);
+}
+.hero-autoplay {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  place-items: center;
+  background: white;
+  border: 1px solid var(--kb-line);
+  border-radius: 50%;
+  color: var(--kb-blue-deep);
+  line-height: 1;
+}
+.hero-autoplay:hover {
+  border-color: var(--kb-blue);
+  background: var(--kb-surface-soft);
+}
+.hero-autoplay .iconify {
+  display: grid;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  place-items: center;
+  line-height: 1;
 }
 .hero-facts {
   display: grid;
@@ -867,8 +914,6 @@ h1 {
   .hero-search .hero-field {
     grid-column: 1;
     grid-row: auto;
-    border-right: 0;
-    border-bottom: 1px solid var(--kb-line);
   }
   .hero-search-submit {
     grid-column: 1;

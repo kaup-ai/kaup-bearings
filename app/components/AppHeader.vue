@@ -39,7 +39,7 @@ const isActive = (path: string) => route.path === path || route.path.endsWith(pa
           type="search"
           :placeholder="t('common.searchPlaceholder')"
         >
-        <button type="submit">{{ locale === 'zh' ? '查询' : 'Find' }}</button>
+        <button type="submit">{{ locale === 'zh' ? '搜索' : 'Search' }}</button>
       </form>
       <div class="header-actions">
         <NuxtLink v-if="!session" :to="localePath('/auth/buyer')" class="login-link">
@@ -167,11 +167,13 @@ const isActive = (path: string) => route.path === path || route.path.endsWith(pa
   box-shadow: none;
 }
 .model-search button {
-  min-height: 46px;
+  min-height: 38px;
+  margin: 4px 5px 4px 4px;
+  padding: 0 18px;
   border: 0;
+  border-radius: 5px;
   background: var(--kb-blue);
   color: white;
-  padding: 0 19px;
   font-weight: 700;
   cursor: pointer;
 }

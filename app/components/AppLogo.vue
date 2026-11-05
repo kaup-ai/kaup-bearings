@@ -7,7 +7,7 @@
       <path d="M8 27h6M40 27h6M27 8v6M27 40v6" stroke="#f1f6f8" stroke-width="3" stroke-linecap="round" />
     </svg>
     <span>
-      <strong>Kaup Bearings</strong>
+      <strong>KAUP BEARINGS</strong>
       <small>北轴汇 · BEARING SOURCING</small>
     </span>
   </span>
@@ -27,9 +27,9 @@ svg {
 }
 strong {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.05;
-  letter-spacing: -0.025em;
+  letter-spacing: 0.045em;
 }
 small {
   display: block;
