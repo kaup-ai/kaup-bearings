@@ -1,0 +1,20 @@
+[
+  {
+    "name": "preview-hero-bearing-factory",
+    "model": "image-01",
+    "prompt": "Use case: photorealistic-natural. Asset type: wide website hero photograph for a professional bearing sourcing platform. Primary request: a precision bearing quality-control area inside a modern industrial factory, with a large tapered roller bearing assembly on a granite inspection table. Scene/backdrop: clean bearing manufacturing workshop with a CNC grinder softly out of focus in the background. Subject: polished steel bearing rings and rollers, precision measuring instruments, a machinist's gloved hands checking a component. Style/medium: photorealistic industrial editorial photography, documentary realism. Composition/framing: wide 16:9 horizontal composition, main bearing in the right half, subdued machinery and open dark negative space on the left for website copy. Lighting/mood: cool daylight mixed with warm machine-task lighting, precise and trustworthy. Color palette: graphite, steel gray, cool blue, restrained safety amber. Materials/textures: brushed steel, machined raceways, faint oil film, concrete and powder-coated machinery. Constraints: realistic proportions and manufacturing details; no logos; no trademarks; no text; no watermark; no illustration; no cartoon; no 3D render appearance; no fantasy machinery.",
+    "role": "hero"
+  },
+  {
+    "name": "preview-product-deep-groove",
+    "model": "image-01",
+    "prompt": "Use case: product-mockup. Asset type: bearing product detail and category image. Primary request: a single industrial deep groove ball bearing shown as a real manufactured component. Scene/backdrop: dark machined steel work surface with subtle cutting marks and a clean graphite background. Subject: bearing with polished chrome steel races, dark seals, evenly spaced balls, realistic cage geometry and fine manufacturing texture. Style/medium: photorealistic commercial product photography. Composition/framing: wide 16:9 horizontal composition, bearing slightly right of center in a three-quarter top view, clean negative space on the left. Lighting/mood: controlled softbox highlights, crisp edge definition, subtle shadow. Color palette: steel silver, graphite, cool blue reflection, tiny amber reflection. Materials/textures: accurately machined metal, clean elastomer seals, faint lubricant sheen. Constraints: one bearing only; physically plausible bearing construction; no brand markings; no text; no watermark; no illustration; no cartoon; no CGI plastic look; no floating components.",
+    "role": "product"
+  },
+  {
+    "name": "preview-application-wind-turbine",
+    "model": "image-01",
+    "prompt": "Use case: photorealistic-natural. Asset type: application-industry photograph for a bearing marketplace. Primary request: maintenance technicians inspecting the main rotor bearing assembly of a wind turbine nacelle during scheduled service. Scene/backdrop: interior of a real utility-scale wind turbine nacelle, large forged rings, bolts, hydraulic lines and service equipment. Subject: massive slewing-style bearing assembly and torque tools, with technicians in protective equipment performing an inspection. Style/medium: photorealistic documentary industrial photography, engineering realism. Composition/framing: wide 16:9 horizontal composition, bearing assembly and technicians on the right, open shadowed nacelle interior on the left for possible text overlay. Lighting/mood: natural overcast daylight entering the nacelle, serious and precise. Color palette: desaturated cool gray, off-white composite, dark steel, a small safety orange accent. Materials/textures: forged steel, bolt threads, composite nacelle shell, work-worn gloves and tools. Constraints: physically plausible wind turbine service scene; no logos; no trademarks; no text; no watermark; no illustration; no cartoon; no 3D render appearance; no unsafe equipment.",
+    "role": "industry"
+  }
+]
