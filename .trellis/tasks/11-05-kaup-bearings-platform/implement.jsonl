@@ -1,0 +1,4 @@
+{"file": ".trellis/spec/frontend/index.md", "reason": "Frontend layer entry point and required component/state/type conventions"}
+{"file": ".trellis/spec/guides/cross-layer-thinking-guide.md", "reason": "Catalog, SEO and browser-storage contracts cross shared, app and server layers"}
+{"file": ".trellis/spec/guides/code-reuse-thinking-guide.md", "reason": "Reuse taxonomy, filter, metadata and image helpers instead of duplicating page logic"}
+{"file": ".trellis/tasks/11-05-kaup-bearings-platform/research/reference-evidence.md", "reason": "Evidence for choosing Nuxt architecture, workflow scope and image constraints"}
