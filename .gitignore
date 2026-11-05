@@ -1,10 +1,55 @@
-node_modules
-.nuxt
-.output
-.data
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Nuxt, Nitro, and build outputs
+.nuxt/
+.output/
+.nitro/
+.data/
+.cache/
+dist/
+
+# Environment variables
 .env
+.env.*
+!.env.example
+
+# Logs and process files
+logs/
+*.log
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log*
+
+# Test and coverage outputs
+coverage/
+playwright-report/
+test-results/
+*.lcov
+
+# Tool caches
+.eslintcache
+*.tsbuildinfo
+**/.vite-inspect/
+**/vite.config.*.timestamp-*
+
+# Local image-generation and scratch files
+tmp/
+output/imagegen/
+
+# Editors and operating systems
 .DS_Store
-coverage
-playwright-report
-test-results
-.superpowers
+._*
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local secrets and credentials
+*.pem
+*.key
+*.p12
+*.pfx
