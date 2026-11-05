@@ -1,51 +1,24 @@
 # Type Safety
 
-> Type safety patterns in this project.
+## Contracts
 
----
+Domain types live in `shared/types/catalog.ts`. App and server code import them through `#shared/types/catalog`.
 
-## Overview
+```ts
+export interface ProductFilter {
+  category?: string
+  dimensions?: Partial<Record<DimensionKey, NumericRange>>
+}
+```
 
-<!--
-Document your project's type safety conventions here.
+## Runtime Validation
 
-Questions to answer:
-- What type system do you use?
-- How are types organized?
-- What validation library do you use?
-- How do you handle type inference?
--->
+Nuxt Content frontmatter is validated by `content.config.ts` with Zod. RFQ submission calls `validateRfq` before browser persistence. Native form constraints are supplementary.
 
-(To be filled by the team)
+## Rules
 
----
-
-## Type Organization
-
-<!-- Where types are defined, shared types vs local types -->
-
-(To be filled by the team)
-
----
-
-## Validation
-
-<!-- Runtime validation patterns (Zod, Yup, io-ts, etc.) -->
-
-(To be filled by the team)
-
----
-
-## Common Patterns
-
-<!-- Type utilities, generics, type guards -->
-
-(To be filled by the team)
-
----
-
-## Forbidden Patterns
-
-<!-- any, type assertions, etc. -->
-
-(To be filled by the team)
+- TypeScript strict mode is enabled.
+- Avoid `any`; use `unknown` plus guards for external payloads.
+- Use discriminated result types for recoverable storage failures.
+- Validate product/category slugs and references in tests.
+- Do not define parallel payload interfaces in pages or components.

@@ -1,39 +1,31 @@
 # Frontend Development Guidelines
 
-> Best practices for frontend development in this project.
-
----
-
-## Overview
-
-This directory contains guidelines for frontend development. Fill in each file with your project's specific conventions.
-
----
-
 ## Guidelines Index
 
 | Guide | Description | Status |
-|-------|-------------|--------|
-| [Directory Structure](./directory-structure.md) | Module organization and file layout | To fill |
-| [Component Guidelines](./component-guidelines.md) | Component patterns, props, composition | To fill |
-| [Hook Guidelines](./hook-guidelines.md) | Custom hooks, data fetching patterns | To fill |
-| [State Management](./state-management.md) | Local state, global state, server state | To fill |
-| [Quality Guidelines](./quality-guidelines.md) | Code standards, forbidden patterns | To fill |
-| [Type Safety](./type-safety.md) | Type patterns, validation | To fill |
+| --- | --- | --- |
+| [Directory Structure](./directory-structure.md) | Nuxt app, shared domain and server boundaries | Active |
+| [Component Guidelines](./component-guidelines.md) | Vue component, scoped CSS and accessibility patterns | Active |
+| [Hook Guidelines](./hook-guidelines.md) | Nuxt composable patterns | Active |
+| [State Management](./state-management.md) | URL filters and browser-local demo persistence | Active |
+| [Quality Guidelines](./quality-guidelines.md) | Tests, build, SEO and visual verification | Active |
+| [Type Safety](./type-safety.md) | Shared TypeScript contracts and `#shared` imports | Active |
 
----
+## Pre-Development Checklist
 
-## How to Fill These Guidelines
+- Read the active Trellis task artifacts.
+- Keep pure domain logic under `shared/`.
+- Use `#shared/...` imports from Nuxt app and Nitro code.
+- Keep browser storage access inside composables.
+- Verify SSR HTML and noindex policy for any new public page.
 
-For each guideline file:
+## Quality Check
 
-1. Document your project's **actual conventions** (not ideals)
-2. Include **code examples** from your codebase
-3. List **forbidden patterns** and why
-4. Add **common mistakes** your team has made
+```bash
+pnpm test
+pnpm typecheck
+pnpm lint
+pnpm build
+```
 
-The goal is to help AI assistants and new team members understand how YOUR project works.
-
----
-
-**Language**: All documentation should be written in **English**.
+Also check browser layouts at 375, 768 and 1440 widths.

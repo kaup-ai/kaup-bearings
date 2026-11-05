@@ -1,51 +1,31 @@
 # State Management
 
-> How state is managed in this project.
+## URL State
 
----
+Catalog filters are URL state. They survive reloads through query parameters, and server rendering reads the same query.
 
-## Overview
+## Browser Demo State
 
-<!--
-Document your project's state management conventions here.
+Use versioned keys:
 
-Questions to answer:
-- What state management solution do you use?
-- How is local vs global state decided?
-- How do you handle server state?
-- What are the patterns for derived state?
--->
+| Key | Purpose |
+| --- | --- |
+| `kb_session_v1` | Current demo role and approval status |
+| `kb_accounts_v1` | Registered demo accounts |
+| `kb_drafts_v1` | Supplier product drafts |
+| `kb_rfqs_v1` | Buyer inquiries and supplier replies |
+| `kb_supplier_profile_v1` | Supplier capability profile |
 
-(To be filled by the team)
+Use the storage adapter result contract:
 
----
+```ts
+type StoreResult<T> =
+  | { ok: true; value: T }
+  | { ok: false; error: 'unavailable' | 'invalid' | 'quota' }
+```
 
-## State Categories
-
-<!-- Local state, global state, server state, URL state -->
-
-(To be filled by the team)
-
----
-
-## When to Use Global State
-
-<!-- Criteria for promoting state to global -->
-
-(To be filled by the team)
-
----
+Never report success when `ok` is false.
 
 ## Server State
 
-<!-- How server data is cached and synchronized -->
-
-(To be filled by the team)
-
----
-
-## Common Mistakes
-
-<!-- State management mistakes your team has made -->
-
-(To be filled by the team)
+Public catalog and technical content are typed fixtures rendered by Nitro. This prototype has no production API or database.

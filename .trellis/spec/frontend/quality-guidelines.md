@@ -1,51 +1,47 @@
 # Quality Guidelines
 
-> Code quality standards for frontend development.
+## Required Commands
 
----
+```bash
+pnpm test
+pnpm typecheck
+pnpm lint
+pnpm build
+```
 
-## Overview
+All four must pass before delivery.
 
-<!--
-Document your project's quality standards here.
+## Test Coverage
 
-Questions to answer:
-- What patterns are forbidden?
-- What linting rules do you enforce?
-- What are your testing requirements?
-- What code review standards apply?
--->
+- Catalog filtering, search and sorting.
+- RFQ validation and status monotonicity.
+- Supplier permission gates.
+- Locale key parity.
+- Canonical and sitemap path contracts.
+- Data references, product/category counts and image existence.
+- Bilingual technical-content presence.
 
-(To be filled by the team)
+## SEO Contract
 
----
+- Initial server HTML contains the category H1, copy and internal links.
+- Category and technical pages are indexable.
+- Demo commercial/news detail pages use `noindex, follow`.
+- Product, supplier and private workspace pages stay out of the sitemap.
+- Canonical origin is `https://kaupbearings.com`.
+
+## Browser Verification
+
+- 375, 768 and 1440 viewport widths.
+- No horizontal overflow.
+- Above-fold images load.
+- Keyboard order and visible focus are preserved.
+- RFQ → supplier inbox → reply → buyer reply works.
+- Pending suppliers cannot publish or reply.
 
 ## Forbidden Patterns
 
-<!-- Patterns that should never be used and why -->
-
-(To be filled by the team)
-
----
-
-## Required Patterns
-
-<!-- Patterns that must always be used -->
-
-(To be filled by the team)
-
----
-
-## Testing Requirements
-
-<!-- What level of testing is expected -->
-
-(To be filled by the team)
-
----
-
-## Code Review Checklist
-
-<!-- What reviewers should check -->
-
-(To be filled by the team)
+- Client-only rendering for indexable public content.
+- Unlabelled controls or emoji structural icons.
+- Direct `localStorage` access outside the browser-store adapter.
+- Presenting fictional commercial data as real.
+- Face-bearing image prompts without the Chinese Northeast facial-feature constraint.

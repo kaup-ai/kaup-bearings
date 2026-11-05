@@ -1,51 +1,21 @@
-# Hook Guidelines
+# Composable Guidelines
 
-> How hooks are used in this project.
+## Naming and Return Shape
 
----
+Use `useXxx` and return refs, readonly errors and explicit functions:
 
-## Overview
+```ts
+const { session, error, login, logout } = useDemoSession()
+```
 
-<!--
-Document your project's hook conventions here.
+## Browser-only Work
 
-Questions to answer:
-- What custom hooks do you have?
-- How do you handle data fetching?
-- What are the naming conventions?
-- How do you share stateful logic?
--->
+Register `onMounted(load)` for browser storage. SSR renders a safe logged-out or empty state and must not access `window`.
 
-(To be filled by the team)
+## Pure Logic
 
----
+Filtering, status transitions and permission checks live in `shared/utils/`. This keeps them testable with Node and reusable from Nitro.
 
-## Custom Hook Patterns
+## SEO
 
-<!-- How to create and structure custom hooks -->
-
-(To be filled by the team)
-
----
-
-## Data Fetching
-
-<!-- How data fetching is handled (React Query, SWR, etc.) -->
-
-(To be filled by the team)
-
----
-
-## Naming Conventions
-
-<!-- Hook naming rules (use*, etc.) -->
-
-(To be filled by the team)
-
----
-
-## Common Mistakes
-
-<!-- Hook-related mistakes your team has made -->
-
-(To be filled by the team)
+Public pages call `useBearingsSeo` once with title, description, path and index policy. Do not duplicate canonical or `hreflang` markup.
