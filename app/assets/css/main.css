@@ -235,6 +235,10 @@ textarea:focus-visible {
   font-variant-numeric: tabular-nums;
 }
 
+.breadcrumb {
+  align-items: center;
+}
+
 .breadcrumb a {
   display: inline-flex;
   min-height: 44px;
