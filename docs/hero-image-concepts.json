@@ -1,0 +1,20 @@
+[
+  {
+    "name": "hero-monument",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic cinematic homepage hero for a Chinese bearing export platform. Low-angle monumental view of a large precision slewing ring bearing, two metres in diameter, secured on a heavy export skid in the foreground right. Behind it, a high-ceiling bearing factory loading bay opens onto a Dalian-style northern Chinese container port at blue hour, with gantry cranes, stacked containers and a cargo ship. The bearing must look like an engineered monument to manufacturing strength, with visible raceway and rollers, realistic forged steel, oil film and machining marks. Dramatic converging lines, strong scale, atmospheric harbour haze, graphite and cold steel-blue palette with restrained amber worklights. Dark negative space on the left for homepage copy. No people, logos, text, watermark, illustration, cartoon, fantasy machinery or plastic CGI look.",
+    "role": "homepage-hero-option"
+  },
+  {
+    "name": "hero-factory-to-world",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic cinematic homepage hero expressing the journey from Northeast Chinese bearing manufacturing to global B2B supply. A deep one-point perspective through a real modern bearing factory: CNC grinding and assembly stations on both sides, a large finished roller bearing on a transport fixture in the near foreground, and the factory loading doors ahead framing a container port with a cargo ship and gantry cranes. Natural industrial light, polished steel and graphite surfaces, subtle amber machining lights, cold blue daylight at the distant port. Strong depth, motion and scale; the bearing is important but the factory-to-world story dominates. Open darker space on the left for page copy. No people, readable logos, text, watermark, illustration, cartoon, surreal engineering or CGI product look.",
+    "role": "homepage-hero-option"
+  },
+  {
+    "name": "hero-export-dock",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic cinematic homepage hero for a Northeast China bearing export platform. A vast industrial export dock at cold blue hour: a large precision bearing assembly on a reinforced export pallet in the right foreground, next to open wooden crates with protective packing. A container truck is backed into a bright factory loading bay, while a cargo ship, container stacks and towering gantry cranes dominate the distant harbour. Subtle northern winter atmosphere without snow covering the machinery. The composition conveys heavy industry, global logistics and reliable export capacity, with dramatic scale and clean perspective. Graphite, steel, deep blue and restrained safety orange; dark negative space on the left for headline copy. No people, readable logos, text, watermark, illustration, cartoon, fantasy bearings or plastic CGI look.",
+    "role": "homepage-hero-option"
+  }
+]

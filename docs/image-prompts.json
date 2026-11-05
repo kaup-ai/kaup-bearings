@@ -1,20 +1,410 @@
 [
   {
-    "name": "preview-hero-bearing-factory",
+    "name": "knowledge-selection",
+    "output": "/images/scenes/knowledge-selection.webp",
     "model": "image-01",
-    "prompt": "Use case: photorealistic-natural. Asset type: wide website hero photograph for a professional bearing sourcing platform. Primary request: a precision bearing quality-control area inside a modern industrial factory, with a large tapered roller bearing assembly on a granite inspection table. Scene/backdrop: clean bearing manufacturing workshop with a CNC grinder softly out of focus in the background. Subject: polished steel bearing rings and rollers, precision measuring instruments, a machinist's gloved hands checking a component. Style/medium: photorealistic industrial editorial photography, documentary realism. Composition/framing: wide 16:9 horizontal composition, main bearing in the right half, subdued machinery and open dark negative space on the left for website copy. Lighting/mood: cool daylight mixed with warm machine-task lighting, precise and trustworthy. Color palette: graphite, steel gray, cool blue, restrained safety amber. Materials/textures: brushed steel, machined raceways, faint oil film, concrete and powder-coated machinery. Constraints: realistic proportions and manufacturing details; no logos; no trademarks; no text; no watermark; no illustration; no cartoon; no 3D render appearance; no fantasy machinery.",
-    "role": "hero"
+    "prompt": "Wide 16:9 photorealistic bearing engineering selection workstation in a clean Chinese industrial technology centre. Three-quarter overhead view of a steel workbench with four physically accurate bearing types arranged for comparison, engineering drawings showing a bearing cross-section and load-direction arrows, a digital micrometer, dial indicator, calipers and an open technical catalogue. A laptop-like industrial display shows abstract load, speed and dimension charts without readable text. One gloved hand points at the angular-contact bearing; no face is visible. Precise professional engineering atmosphere, cool steel-blue daylight with restrained orange highlights, crisp material texture and shallow depth of field. No logos, watermarks, readable text, illustration, cartoon or plastic CGI look."
   },
   {
-    "name": "preview-product-deep-groove",
+    "name": "hero-packing",
+    "output": "/images/hero/packing.webp",
     "model": "image-01",
-    "prompt": "Use case: product-mockup. Asset type: bearing product detail and category image. Primary request: a single industrial deep groove ball bearing shown as a real manufactured component. Scene/backdrop: dark machined steel work surface with subtle cutting marks and a clean graphite background. Subject: bearing with polished chrome steel races, dark seals, evenly spaced balls, realistic cage geometry and fine manufacturing texture. Style/medium: photorealistic commercial product photography. Composition/framing: wide 16:9 horizontal composition, bearing slightly right of center in a three-quarter top view, clean negative space on the left. Lighting/mood: controlled softbox highlights, crisp edge definition, subtle shadow. Color palette: steel silver, graphite, cool blue reflection, tiny amber reflection. Materials/textures: accurately machined metal, clean elastomer seals, faint lubricant sheen. Constraints: one bearing only; physically plausible bearing construction; no brand markings; no text; no watermark; no illustration; no cartoon; no CGI plastic look; no floating components.",
-    "role": "product"
+    "prompt": "Wide 16:9 photorealistic factory export-packing scene for a Chinese bearing manufacturer. A large precision bearing has been cleaned, coated with thin anti-corrosion oil, wrapped in transparent VCI barrier film and placed in a foam-lined heavy-duty wooden export case. The open case shows desiccant sachets, protective blocking, steel strapping and a blank export plate without readable text. In the surrounding clean industrial packing area, gloved hands tighten a metal band; no face is visible. Modern bearing workshop, inspection equipment and dispatch paperwork out of focus. Cool graphite and steel palette, controlled overhead light, restrained safety-amber accent. Detail rich, physically plausible, no logos, no watermark, no text, no illustration, no cartoon, no plastic CGI look."
   },
   {
-    "name": "preview-application-wind-turbine",
+    "name": "hero-port-loading",
+    "output": "/images/hero/port-loading.webp",
     "model": "image-01",
-    "prompt": "Use case: photorealistic-natural. Asset type: application-industry photograph for a bearing marketplace. Primary request: maintenance technicians inspecting the main rotor bearing assembly of a wind turbine nacelle during scheduled service. Scene/backdrop: interior of a real utility-scale wind turbine nacelle, large forged rings, bolts, hydraulic lines and service equipment. Subject: massive slewing-style bearing assembly and torque tools, with technicians in protective equipment performing an inspection. Style/medium: photorealistic documentary industrial photography, engineering realism. Composition/framing: wide 16:9 horizontal composition, bearing assembly and technicians on the right, open shadowed nacelle interior on the left for possible text overlay. Lighting/mood: natural overcast daylight entering the nacelle, serious and precise. Color palette: desaturated cool gray, off-white composite, dark steel, a small safety orange accent. Materials/textures: forged steel, bolt threads, composite nacelle shell, work-worn gloves and tools. Constraints: physically plausible wind turbine service scene; no logos; no trademarks; no text; no watermark; no illustration; no cartoon; no 3D render appearance; no unsafe equipment.",
-    "role": "industry"
+    "prompt": "Wide 16:9 photorealistic container-terminal photograph for a bearing export story. A closed standard ISO steel shipping container has been lifted a short distance above a container ship by a ship-to-shore gantry crane and spreader. The container is fully closed and secured; the bearing and its protective wooden export cases are inside and completely invisible. Realistic container corner castings, crane spreader, lashing rods and stacked containers, with another cargo vessel visible. Heavy industrial scale, staff absent for safety, cool blue port lighting at dawn, graphite steel and restrained safety-amber highlights. No exposed wooden crate being lifted, no people, readable logos, text, watermark, illustration, cartoon, fantasy rigging or CGI plastic look."
+  },
+  {
+    "name": "hero-voyage",
+    "output": "/images/hero/voyage.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic ocean-freight hero photograph. A large modern container ship underway from a northern Chinese industrial port, stacked export containers secured on deck and a clear wake trailing behind. Ship-to-shore gantry cranes and the Northeast Chinese port skyline recede in cool atmospheric haze. Early blue-hour daylight, calm realistic sea, subtle overcast clouds, graphite and steel-blue palette with a restrained warm horizon. Strong forward motion and horizon, international B2B export mood, generous dark tonality for homepage copy. No visible people, readable logos, text, watermark, illustration, cartoon, fantasy vessel, or plastic CGI look."
+  },
+  {
+    "name": "category-ball-bearings",
+    "output": "/images/categories/ball-bearings.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial catalogue photograph of an assortment of precision deep groove, angular contact, self-aligning and thrust ball bearings. Real bearing workshop inspection table, steel and graphite surfaces, cool daylight with restrained amber task light, technical and orderly composition with breathing room. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "category-roller-bearings",
+    "output": "/images/categories/roller-bearings.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial catalogue photograph of cylindrical, spherical, tapered and needle roller bearings with visible rollers and machined raceways. Real bearing workshop inspection table, steel and graphite surfaces, cool daylight with restrained amber task light, technical and orderly composition with breathing room. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "category-linear-motion",
+    "output": "/images/categories/linear-motion.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial catalogue photograph of a linear ball bushing, profile guide rail and ball screw support bearing on an assembly bench. Real bearing workshop inspection table, steel and graphite surfaces, cool daylight with restrained amber task light, technical and orderly composition with breathing room. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "category-plain-bearings",
+    "output": "/images/categories/plain-bearings.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial catalogue photograph of maintenance-free sleeve bushings, spherical plain bearings, rod ends and thrust washers. Real bearing workshop inspection table, steel and graphite surfaces, cool daylight with restrained amber task light, technical and orderly composition with breathing room. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "category-bearing-units",
+    "output": "/images/categories/bearing-units.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial catalogue photograph of pillow block, flanged and take-up bearing units with cast housings and insert bearings. Real bearing workshop inspection table, steel and graphite surfaces, cool daylight with restrained amber task light, technical and orderly composition with breathing room. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "category-slewing-special-bearings",
+    "output": "/images/categories/slewing-special-bearings.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial catalogue photograph of a large slewing ring bearing beside hybrid ceramic and corrosion-resistant bearing samples. Real bearing workshop inspection table, steel and graphite surfaces, cool daylight with restrained amber task light, technical and orderly composition with breathing room. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "category-bearing-components",
+    "output": "/images/categories/bearing-components.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial catalogue photograph of precision steel balls, cylindrical rollers, cages, rings and seals arranged by component type. Real bearing workshop inspection table, steel and graphite surfaces, cool daylight with restrained amber task light, technical and orderly composition with breathing room. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "category-maintenance-tools",
+    "output": "/images/categories/maintenance-tools.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial catalogue photograph of bearing mounting tools, an induction heater, grease and vibration monitoring equipment. Real bearing workshop inspection table, steel and graphite surfaces, cool daylight with restrained amber task light, technical and orderly composition with breathing room. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p01",
+    "output": "/images/products/p01.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for 6205-2RS/C3 Deep Groove Ball Bearing, designation 6205-2RS/C3. Principal dimensions d 25 mm, D 52 mm, width 15 mm. Show a single correctly assembled 6205-2RS/C3 Deep Groove Ball Bearing with 2RS sealing and steel cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p02",
+    "output": "/images/products/p02.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for 7206 BEP Angular Contact Ball Bearing, designation 7206 BEP. Principal dimensions d 30 mm, D 62 mm, width 16 mm. Show a single correctly assembled 7206 BEP Angular Contact Ball Bearing with open sealing and polyamide cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p03",
+    "output": "/images/products/p03.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for 1210 Self-Aligning Ball Bearing, designation 1210. Principal dimensions d 50 mm, D 90 mm, width 20 mm. Show a single correctly assembled 1210 Self-Aligning Ball Bearing with open sealing and brass cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p04",
+    "output": "/images/products/p04.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for 51208 Thrust Ball Bearing, designation 51208. Principal dimensions d 40 mm, D 68 mm, width 19 mm. Show a single correctly assembled 51208 Thrust Ball Bearing with open sealing and steel cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p05",
+    "output": "/images/products/p05.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for NU 206 ECP Cylindrical Roller Bearing, designation NU 206 ECP. Principal dimensions d 30 mm, D 62 mm, width 16 mm. Show a single correctly assembled NU 206 ECP Cylindrical Roller Bearing with open sealing and polyamide cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p06",
+    "output": "/images/products/p06.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for 22215 E Spherical Roller Bearing, designation 22215 E. Principal dimensions d 75 mm, D 130 mm, width 31 mm. Show a single correctly assembled 22215 E Spherical Roller Bearing with open sealing and brass cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p07",
+    "output": "/images/products/p07.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for 32012 X Tapered Roller Bearing, designation 32012 X. Principal dimensions d 60 mm, D 95 mm, width 23 mm. Show a single correctly assembled 32012 X Tapered Roller Bearing with open sealing and steel cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p08",
+    "output": "/images/products/p08.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for NA 4904 Needle Roller Bearing, designation NA 4904. Principal dimensions d 20 mm, D 37 mm, width 17 mm. Show a single correctly assembled NA 4904 Needle Roller Bearing with open sealing and steel cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p09",
+    "output": "/images/products/p09.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for LME 20 UU Linear Ball Bushing, designation LME 20 UU. Principal dimensions d 20 mm, D 32 mm, width 45 mm. Show a single correctly assembled LME 20 UU Linear Ball Bushing with UU sealing and resin cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p10",
+    "output": "/images/products/p10.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for HGR 25 CA Linear Guide Assembly, designation HGR 25 CA. Principal dimensions d 25 mm, D 70 mm, width 83 mm. Show a single correctly assembled HGR 25 CA Linear Guide Assembly with end-seal sealing and ball-chain cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p11",
+    "output": "/images/products/p11.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for BK 20 Ball Screw Support Unit, designation BK 20. Principal dimensions d 20 mm, D 52 mm, width 38 mm. Show a single correctly assembled BK 20 Ball Screw Support Unit with 2RS sealing and resin cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p12",
+    "output": "/images/products/p12.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for EGH 20 CA Compact Linear Guide, designation EGH 20 CA. Principal dimensions d 20 mm, D 44 mm, width 58 mm. Show a single correctly assembled EGH 20 CA Compact Linear Guide with end-seal sealing and ball-chain cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p13",
+    "output": "/images/products/p13.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for GE 40 ES Spherical Plain Bearing, designation GE 40 ES. Principal dimensions d 40 mm, D 62 mm, width 28 mm. Show a single correctly assembled GE 40 ES Spherical Plain Bearing with open sealing and sliding-contact cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p14",
+    "output": "/images/products/p14.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for PCM 404440 E Sleeve Bushing, designation PCM 404440 E. Principal dimensions d 40 mm, D 44 mm, width 40 mm. Show a single correctly assembled PCM 404440 E Sleeve Bushing with maintenance-free sealing and sliding-contact cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p15",
+    "output": "/images/products/p15.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for PHS 12 A Rod End, designation PHS 12 A. Principal dimensions d 12 mm, D 30 mm, width 16 mm. Show a single correctly assembled PHS 12 A Rod End with open sealing and sliding-contact cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p16",
+    "output": "/images/products/p16.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for AS 4060 Thrust Washer, designation AS 4060. Principal dimensions d 40 mm, D 60 mm, width 1 mm. Show a single correctly assembled AS 4060 Thrust Washer with open sealing and sliding-contact cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p17",
+    "output": "/images/products/p17.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for UCP 210 Pillow Block Bearing Unit, designation UCP 210. Principal dimensions d 50 mm, D 90 mm, width 51.6 mm. Show a single correctly assembled UCP 210 Pillow Block Bearing Unit with 2RS sealing and steel cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p18",
+    "output": "/images/products/p18.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for UCFL 210 Flanged Bearing Unit, designation UCFL 210. Principal dimensions d 50 mm, D 90 mm, width 51.6 mm. Show a single correctly assembled UCFL 210 Flanged Bearing Unit with 2RS sealing and steel cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p19",
+    "output": "/images/products/p19.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for UCT 210 Take-Up Bearing Unit, designation UCT 210. Principal dimensions d 50 mm, D 90 mm, width 51.6 mm. Show a single correctly assembled UCT 210 Take-Up Bearing Unit with 2RS sealing and steel cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p20",
+    "output": "/images/products/p20.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for UB 205 Insert Ball Bearing, designation UB 205. Principal dimensions d 25 mm, D 52 mm, width 27 mm. Show a single correctly assembled UB 205 Insert Ball Bearing with 2RS sealing and steel cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p21",
+    "output": "/images/products/p21.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for 011.40.1000 Slewing Ring Bearing, designation 011.40.1000. Principal dimensions d 912 mm, D 1128 mm, width 100 mm. Show a single correctly assembled 011.40.1000 Slewing Ring Bearing with sealed sealing and spacer cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p22",
+    "output": "/images/products/p22.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for 230SM280 Split Spherical Roller Bearing, designation 230SM280. Principal dimensions d 280 mm, D 460 mm, width 145 mm. Show a single correctly assembled 230SM280 Split Spherical Roller Bearing with open sealing and brass cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p23",
+    "output": "/images/products/p23.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for 6205-HC5 Hybrid Ceramic Bearing, designation 6205-HC5. Principal dimensions d 25 mm, D 52 mm, width 15 mm. Show a single correctly assembled 6205-HC5 Hybrid Ceramic Bearing with open sealing and PEEK cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p24",
+    "output": "/images/products/p24.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for SS 6205-2RS High-Temperature Bearing, designation SS 6205-2RS. Principal dimensions d 25 mm, D 52 mm, width 15 mm. Show a single correctly assembled SS 6205-2RS High-Temperature Bearing with 2RS sealing and stainless cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p25",
+    "output": "/images/products/p25.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for G10 Precision Bearing Ball, designation G10 Ø8.000. Principal dimensions d 8 mm, D 8 mm, width 8 mm. Show a single correctly assembled G10 Precision Bearing Ball with N/A sealing and N/A cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p26",
+    "output": "/images/products/p26.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for ZAR 9×9 Cylindrical Bearing Roller, designation ZAR 9×9. Principal dimensions d 9 mm, D 9 mm, width 9 mm. Show a single correctly assembled ZAR 9×9 Cylindrical Bearing Roller with N/A sealing and N/A cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p27",
+    "output": "/images/products/p27.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for M 6205 Pressed Steel Cage, designation M 6205. Principal dimensions d 25 mm, D 52 mm, width 15 mm. Show a single correctly assembled M 6205 Pressed Steel Cage with N/A sealing and steel cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p28",
+    "output": "/images/products/p28.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for 6205 Bearing Outer Ring, designation 6205 OR. Principal dimensions d 25 mm, D 52 mm, width 15 mm. Show a single correctly assembled 6205 Bearing Outer Ring with N/A sealing and N/A cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p29",
+    "output": "/images/products/p29.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for TMFT 36 Bearing Mounting Tool Set, designation TMFT 36. Principal dimensions d 36 mm, D 120 mm, width 120 mm. Show a single correctly assembled TMFT 36 Bearing Mounting Tool Set with N/A sealing and N/A cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p30",
+    "output": "/images/products/p30.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for IH 240 Bearing Induction Heater, designation IH 240. Principal dimensions d 240 mm, D 320 mm, width 200 mm. Show a single correctly assembled IH 240 Bearing Induction Heater with N/A sealing and N/A cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p31",
+    "output": "/images/products/p31.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for K3-20 High-Load Bearing Grease, designation K3-20. Principal dimensions d 20 mm, D 60 mm, width 20 mm. Show a single correctly assembled K3-20 High-Load Bearing Grease with N/A sealing and N/A cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "p32",
+    "output": "/images/products/p32.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing product photograph for CMXA 70 Bearing Condition Monitor, designation CMXA 70. Principal dimensions d 70 mm, D 150 mm, width 40 mm. Show a single correctly assembled CMXA 70 Bearing Condition Monitor with IP65 sealing and N/A cage on a dark machined inspection surface. Three-quarter view, softbox highlights, shallow industrial background, no people. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "scene-inspection",
+    "output": "/images/scenes/inspection.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing metrology laboratory. A polished tapered roller bearing sits on a granite surface plate beside a precision micrometer and roundness measuring instrument. No visible human faces, only gloved hands at most. Cool technical lighting, graphite and steel palette, plausible inspection equipment. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "scene-assembly",
+    "output": "/images/scenes/assembly.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic bearing assembly workshop. Sealed bearing rings, cages and rollers move through a clean organised assembly and inspection line. No visible human faces; machinery and components are the subject. Cool daylight, brushed steel and safety amber accents, physically plausible factory. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "scene-exhibition",
+    "output": "/images/scenes/exhibition.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial exhibition hall with unlabelled bearing and motion-control displays, large slewing rings, precision bearings and machine components. Wide architectural view, no readable text, no visible faces, cool white lighting and safety orange accents. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "scene-hero",
+    "output": "/images/scenes/hero.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial photographic hero for a bearing platform. A precision tapered roller bearing assembly on a granite inspection table inside a modern bearing factory, CNC grinder softly out of focus behind it. Dark open negative space on the left, bearing on the right, cool daylight, graphite steel and restrained amber. No visible human face. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "scene-wind",
+    "output": "/images/scenes/wind.png",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic wind turbine nacelle service scene showing a massive main rotor bearing and torque tools. If any person's face is visible, the person must be a Chinese national from Northeast China with authentic Dongbei Chinese facial features; otherwise show the workers from behind. No foreign faces and no generic East Asian faces. Cool overcast daylight, plausible engineering details. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "application-electric-motor",
+    "output": "/images/applications/electric-motor.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial documentary photograph. Primary scene: a large three-phase industrial electric motor opened for rotor installation, with copper stator windings, laminated rotor, visible shaft and two deep-groove ball bearings, in an electrical machinery assembly workshop with winding and balancing equipment. The equipment itself must dominate and visually explain why this application needs a specific bearing type. Use a distinct, real environment and camera composition for this application rather than a generic machine workshop. Physically correct equipment, practical service tools, no visible human faces, no text or logos. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "application-gearbox",
+    "output": "/images/applications/gearbox.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial documentary photograph. Primary scene: the open housing of a heavy industrial helical gearbox during assembly, showing meshing gears, shafts, tapered and cylindrical roller bearings and controlled oil film on a dedicated gearbox build stand. The equipment itself must dominate and visually explain why this application needs a specific bearing type. Use a distinct, real environment and camera composition for this application rather than a generic machine workshop. Physically correct equipment, practical service tools, no visible human faces, no text or logos. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "application-mining",
+    "output": "/images/applications/mining.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial documentary photograph. Primary scene: a huge mining haul-truck wheel hub and final-drive assembly being serviced outdoors at an open-pit mine maintenance yard, with a large spherical roller bearing, jack stands, torque equipment and red-brown ore dust. The equipment itself must dominate and visually explain why this application needs a specific bearing type. Use a distinct, real environment and camera composition for this application rather than a generic machine workshop. Physically correct equipment, practical service tools, no visible human faces, no text or logos. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "application-machine-tool",
+    "output": "/images/applications/machine-tool.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial documentary photograph. Primary scene: a high-precision CNC machine-tool spindle being assembled in a bright clean metrology room, with matched angular-contact bearings, a precision tool taper, dial indicator and temperature-controlled assembly table. The equipment itself must dominate and visually explain why this application needs a specific bearing type. Use a distinct, real environment and camera composition for this application rather than a generic machine workshop. Physically correct equipment, practical service tools, no visible human faces, no text or logos. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "application-conveyor",
+    "output": "/images/applications/conveyor.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial documentary photograph. Primary scene: a long bulk-material conveyor gallery and drive station in a port bulk terminal, clearly showing the head pulley, shaft, bearing units and gearbox connected to the conveyor frame. The equipment itself must dominate and visually explain why this application needs a specific bearing type. Use a distinct, real environment and camera composition for this application rather than a generic machine workshop. Physically correct equipment, practical service tools, no visible human faces, no text or logos. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "application-wind",
+    "output": "/images/applications/wind.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial documentary photograph. Primary scene: inside a utility-scale wind-turbine nacelle high above winter hills, with the massive main rotor bearing, hydraulic torque tools and service crane track clearly visible around the drivetrain. The equipment itself must dominate and visually explain why this application needs a specific bearing type. Use a distinct, real environment and camera composition for this application rather than a generic machine workshop. Physically correct equipment, practical service tools, no visible human faces, no text or logos. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "application-pump",
+    "output": "/images/applications/pump.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial documentary photograph. Primary scene: a large centrifugal process pump opened for overhaul in a petrochemical maintenance workshop, showing the impeller, shaft, mechanical seal area and bearing housing on a pump assembly stand. The equipment itself must dominate and visually explain why this application needs a specific bearing type. Use a distinct, real environment and camera composition for this application rather than a generic machine workshop. Physically correct equipment, practical service tools, no visible human faces, no text or logos. Photorealistic commercial industrial photography, accurate machine-manufactured bearing geometry, real polished steel, machining marks, subtle oil film, controlled light, no text, no logos, no watermark, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-north-ridge-precision",
+    "output": "/images/suppliers/north-ridge-precision.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: a modern precision-bearing factory campus in Harbin at cold blue dawn, with a glass-walled clean production hall, HVAC equipment, dispatch bays and neat insulated loading docks in the foreground. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-harbin-axis-works",
+    "output": "/images/suppliers/harbin-axis-works.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: the interior of a heavy forging hall with a large open-die press forming a glowing hot bearing-ring blank, gripping manipulators, scale, overhead crane rails and intense orange heat against dark steel. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-anshan-heavy-bearing",
+    "output": "/images/suppliers/anshan-heavy-bearing.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: a large-bearing heat-treatment department with a deep pit furnace, overhead crane lifting a massive forged bearing ring, quenching equipment and industrial rails at a major heavy-machinery plant. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-shenyang-raceway",
+    "output": "/images/suppliers/shenyang-raceway.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: a precision raceway-grinding production line with several CNC internal grinders operating under coolant, bearing rings in fixtures and a profile-measurement station, shown in a clean cold-blue workshop. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-liaoning-ringtech",
+    "output": "/images/suppliers/liaoning-ringtech.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: an automated powder-metal sintering line with continuous furnaces, trays of plain bushings, compacting presses and a bright quality-control station. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-changchun-precision-rings",
+    "output": "/images/suppliers/changchun-precision-rings.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: a temperature-controlled metrology laboratory with a coordinate-measuring machine, granite table, precision bearing rings and surface-finish instruments viewed through a clean glass inspection area. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-dalian-linear-works",
+    "output": "/images/suppliers/dalian-linear-works.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: a very long linear-guide production hall with rails stretching into perspective, straightening presses, rail grinding machines, preload assembly stations and overhead extraction ducts. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-haicheng-unit-works",
+    "output": "/images/suppliers/haicheng-unit-works.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: a foundry and machining plant for cast-iron pillow-block housings, with green-sand moulding boxes, raw castings on steel pallets and CNC housing machining cells. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-dandong-bearing-unit",
+    "output": "/images/suppliers/dandong-bearing-unit.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: a high-volume bearing-unit assembly area with a conveyor of take-up units, flanged housings, insert bearings and automated greasing stations. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-harbin-steel-ball",
+    "output": "/images/suppliers/harbin-steel-ball.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: a precision steel-ball plant with rows of lapping barrels, washing drums, optical sorting machines and mirrored steel balls moving through inspection trays. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-shenyang-shieldtech",
+    "output": "/images/suppliers/shenyang-shieldtech.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: a component-manufacturing plant with large stamping presses forming bearing cages, elastomer seal moulding machines and racks of finished seals. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
+  },
+  {
+    "name": "supplier-changchun-lubricants",
+    "output": "/images/suppliers/changchun-lubricants.webp",
+    "model": "image-01",
+    "prompt": "Wide 16:9 photorealistic industrial capability photograph. Primary scene: a bearing-lubricant production facility with a small outdoor tank farm, insulated transfer pipes, blending vessels and a glass-walled grease testing laboratory. The production equipment, facility scale and process step must be unmistakable and visually different from a generic workshop. Show a credible working Chinese factory with practical material handling and industrial architecture. It must not look like a bearing product photo. Avoid exposed final products as the hero, macro product composition, uniform dark workshop interiors and duplicated equipment layouts. No readable logos or text, no visible human faces. Photorealistic documentary photography, sharp industrial detail, restrained cool-blue daylight and process-specific lighting, no illustration, no cartoon, no CGI plastic look."
   }
 ]
